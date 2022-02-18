@@ -17,3 +17,10 @@ values('Nilanjana',41000,'03-01-2022'),
 ('Biu',20000,'08-01-2021');
 --------------------------UC4----------------------------
 select * from employee_payroll;
+------------------------UC5-----------------------------
+select Salary from employee_payroll where name = 'Nilanjana';
+select Salary from employee_payroll where name = 'Biu';
+------------------------UC6------------------------------
+ALTER TABLE employee_payroll ADD Gender char(1);
+update employee_payroll set Gender = 'F' where name = 'Nilanjana' or name= 'Shruti'or name = 'Biu';
+update employee_payroll set Gender = 'M' where name = 'Altu' or name= 'Altu';
