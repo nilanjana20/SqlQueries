@@ -30,3 +30,7 @@ select avg(Salary) from employee_payroll where gender = 'F' group by Gender;
 select min(Salary) from employee_payroll where gender = 'M' group by Gender;
 select max(Salary) from employee_payroll;
 select count(Salary) from employee_payroll ;
+----------------------------------UC8--------------------------------
+ALTER TABLE employee_payroll ADD Phone bigint;
+ALTER TABLE employee_payroll ADD Address varchar(500)not null DEFAULT 'Kolkata';
+ALTER TABLE employee_payroll ADD Department varchar(500) not null DEFAULT 'IT';
