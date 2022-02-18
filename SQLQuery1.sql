@@ -34,3 +34,9 @@ select count(Salary) from employee_payroll ;
 ALTER TABLE employee_payroll ADD Phone bigint;
 ALTER TABLE employee_payroll ADD Address varchar(500)not null DEFAULT 'Kolkata';
 ALTER TABLE employee_payroll ADD Department varchar(500) not null DEFAULT 'IT';
+--------------------------------------UC9------------------------------------------------
+ALTER TABLE employee_payroll ADD Basicpay float;
+ALTER TABLE employee_payroll ADD Deductions float;
+ALTER TABLE employee_payroll ADD TaxablePay float;
+ALTER TABLE employee_payroll ADD IncomeTax float;
+ALTER TABLE employee_payroll ADD NetPay float;
